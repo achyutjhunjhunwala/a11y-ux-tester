@@ -12,7 +12,8 @@
     "serve:debug": "nodemon --inspect lib/index.js --exec babel-node",
     "build": "npm run lint && npm run test && babel lib -d dist",
     "lint": "eslint . --fix",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "prepush": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
