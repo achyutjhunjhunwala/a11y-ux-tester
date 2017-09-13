@@ -1,0 +1,41 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "express seed",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "start": "node dist/index.js",
+    "serve": "nodemon lib/index.js --exec babel-node",
+    "serve:debug": "nodemon --inspect lib/index.js --exec babel-node",
+    "build": "npm run lint && npm run test && babel lib -d dist",
+    "lint": "eslint . --fix",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.0.2",
+    "husky": "^0.14.3",
+    "jest": "^21.0.2",
+    "nodemon": "^1.12.0"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "isomorphic-fetch": "^2.2.1",
+    "morgan": "^1.8.2",
+    "winston": "^2.3.1"
+  }
+}
