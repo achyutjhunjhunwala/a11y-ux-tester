@@ -16,8 +16,7 @@
     "prepush": "npm run lint && npm test"
   },
   "repository": {
-    "type": "git",
-    "url": "git@git.mcmakler.com:nodejs/express-template.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
