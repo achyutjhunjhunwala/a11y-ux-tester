@@ -1,5 +1,10 @@
-## express seed
+## A11y UX Testing Project
+
 Features:
+
+- Ability to test readability of Button Text on a Webpage
+
+Technical Features:
 - Babel support with node environment
 - Logging
 - Testing with Jest

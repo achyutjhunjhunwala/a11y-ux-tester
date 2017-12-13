@@ -1,7 +1,7 @@
 {
-  "name": "express-template",
+  "name": "A11y-UX-Tester",
   "version": "1.0.0",
-  "description": "express seed",
+  "description": "Standalone application to read text on the website and check readability over color contrast",
   "main": "index.js",
   "scripts": {
     "test": "jest",
