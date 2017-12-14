@@ -11,3 +11,6 @@ install:
   - npm install
 script:
   - npm run lint
+cache:
+  directories:
+    - "node_modules"
