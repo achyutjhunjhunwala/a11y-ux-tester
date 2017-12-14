@@ -1,8 +1,6 @@
 os: linux
 language: node_js
 node_js: node
-env:
-  - WEBPACK_CONFIG_MODE='CLIENT_BUILD'
 before_install:
   - npm i -g yarn
 install: yarn install
