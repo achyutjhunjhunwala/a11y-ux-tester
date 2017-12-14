@@ -1,0 +1,10 @@
+os: linux
+language: node_js
+node_js: node
+before_install:
+  - npm i -g yarn
+install: yarn install
+script: npm run prepush
+cache:
+  directories:
+    - "node_modules"
