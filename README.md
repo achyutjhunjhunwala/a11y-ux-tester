@@ -33,4 +33,15 @@ npm run test
 npm run build
 npm run start
 ```
+#### Using the App
+Via Postman -
+
+1 URL, multiple URL can be added to array. Only GLASS URLs
+```
+
+url - http://localhost:8080/queue-markets
+method - POST
+Payload - {"list": [{"url":"https://adidas.de"}], "resolution": {"x": 1200, "y": 1080}}
+Type - RAW (Application/JSON)
+```
 =======
