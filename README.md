@@ -28,23 +28,15 @@ npm run serve:debug
 ```
 npm run test
 ```
-#### Deployment
+#### Build
 ```
 npm run build
 ```
-
-#### Deployment using Docker
-Make Sure environment variables are set on the running env
-```
-docker build --build-arg AWS_ACCESS_KEY_ID={AWS_KEY} --build-arg AWS_SECRET_ACCESS_KEY={AWS_SECRET} -t a11y-ux-tester .
-docker run -p 8080:8080 -h 127.0.0.1 -d  a11y-ux-tester
-```
-#### Running Prod Version
+#### Running Build Version Locally
 ```
 cd dist/
 node index.js
 ```
-
 #### Running on Server
 
 This app uses Amazon SQS for queue management.
@@ -52,6 +44,14 @@ This app uses Amazon SQS for queue management.
 
 1. AWS_ACCESS_KEY_ID
 2. AWS_SECRET_ACCESS_KEY
+
+#### Using Docker
+Make Sure environment variables are set on the running env
+```
+docker build --build-arg AWS_ACCESS_KEY_ID={AWS_KEY} --build-arg AWS_SECRET_ACCESS_KEY={AWS_SECRET} -t a11y-ux-tester .
+docker run -p 8080:8080 -h 127.0.0.1 -d  a11y-ux-tester
+```
+
 
 #### Using the App
 Via Postman -
@@ -63,5 +63,11 @@ url - http://localhost:8080/queue-markets
 method - POST
 Payload - {"list": [{"url":"https://adidas.de"}], "resolution": {"x": 1200, "y": 1080}}
 Type - RAW (Application/JSON)
+```
+
+#### Credits
+```
+1. https://github.com/saibs - For Node JS Seed
+2. https://github.com/andrewbrandwood/a11y-image-text - For a11y comparison Logic
 ```
 
