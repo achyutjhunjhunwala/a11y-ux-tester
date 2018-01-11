@@ -31,8 +31,13 @@ npm run test
 #### Deployment
 ```
 npm run build
-npm run start
 ```
+#### Running Prod Version
+```
+cd dist/
+node index.js
+```
+
 #### Using the App
 Via Postman -
 
@@ -44,4 +49,4 @@ method - POST
 Payload - {"list": [{"url":"https://adidas.de"}], "resolution": {"x": 1200, "y": 1080}}
 Type - RAW (Application/JSON)
 ```
-=======
+
