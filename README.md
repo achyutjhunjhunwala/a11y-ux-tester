@@ -66,8 +66,6 @@ Type - RAW (Application/JSON)
 ```
 
 #### Credits
-```
-1. https://github.com/saibs - For Node JS Seed
-2. https://github.com/andrewbrandwood/a11y-image-text - For a11y comparison Logic
-```
 
+* **Andrew Brandwood** - *A11y Text Over Image Contrast Logic* - [Andrewbrandwood](https://github.com/andrewbrandwood)
+* **Sai Baba Satchitanand** - *Node Seed* - [Saibs](https://github.com/saibs)
