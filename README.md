@@ -65,3 +65,9 @@ Payload - {"list": [{"url":"https://adidas.de"}], "resolution": {"x": 1200, "y":
 Type - RAW (Application/JSON)
 ```
 
+#### Credits
+```
+1. https://github.com/saibs - For Node JS Seed
+2. https://github.com/andrewbrandwood/a11y-image-text - For a11y comparison Logic
+```
+
