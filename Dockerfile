@@ -1,5 +1,6 @@
 FROM node:9-alpine
-MAINTAINER Jhunjhunwala, Achyut <Achyut.Jhunjhunwala@externals.adidas-group.com>
+
+MAINTAINER Jhunjhunwala, Achyut <achyut.jhunjhunwala@gmail.com>
 
 COPY . src/
 
@@ -8,8 +9,6 @@ WORKDIR src/
 RUN npm i
 
 RUN npm run build
-
-ADD dist .
 
 USER nobody
 
