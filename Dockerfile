@@ -12,7 +12,7 @@ RUN npm run build
 
 USER nobody
 
-EXPOSE 8080
+EXPOSE 8080 3000
 
 ARG AWS_ACCESS_KEY_ID=key
 
