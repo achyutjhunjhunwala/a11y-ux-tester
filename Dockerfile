@@ -1,5 +1,6 @@
 FROM node:9-alpine
-MAINTAINER Jhunjhunwala, Achyut <Achyut.Jhunjhunwala@externals.adidas-group.com>
+
+MAINTAINER Jhunjhunwala, Achyut <achyut.jhunjhunwala@gmail.com>
 
 COPY . src/
 
@@ -9,11 +10,9 @@ RUN npm i
 
 RUN npm run build
 
-#ADD dist .
-
 USER nobody
 
-EXPOSE 8080
+EXPOSE 8080 3000
 
 ARG AWS_ACCESS_KEY_ID=key
 
