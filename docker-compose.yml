@@ -1,0 +1,16 @@
+---
+services:
+  chrome:
+    image: browserless/chrome
+    ports:
+      - "3000:3000"
+    restart: always
+    shm_size: 1g
+  webapp:
+    depends_on:
+      - chrome
+    image: a11y-ux-tester
+    ports:
+      - "8080:8080"
+    restart: always
+version: "2"
