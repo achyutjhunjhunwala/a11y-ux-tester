@@ -6,13 +6,13 @@ COPY . src/
 
 WORKDIR src/
 
+ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
+
 RUN npm i
 
 RUN npm run build
 
 RUN apk add --no-cache curl
-
-USER nobody
 
 EXPOSE 8080 3000
 
