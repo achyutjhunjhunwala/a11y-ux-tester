@@ -8,6 +8,7 @@ services:
     shm_size: 1g
     environment:
       - MAX_CONCURRENT_SESSIONS=1
+      - MAX_QUEUE_LENGTH=10
   webapp:
     depends_on:
       - chrome
