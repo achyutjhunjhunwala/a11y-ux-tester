@@ -6,6 +6,8 @@ services:
       - "3000:3000"
     restart: always
     shm_size: 1g
+    environment:
+      - MAX_CONCURRENT_SESSIONS=1
   webapp:
     depends_on:
       - chrome
