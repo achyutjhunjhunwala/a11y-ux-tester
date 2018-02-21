@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "a11y-ux-tester",
+      "script": "dist/index.js",
+      "merge_logs": true,
+      "max_restarts": 20,
+      "exec_mode" : "cluster",
+      "instances": "10",
+      "max_memory_restart": "512",
+      "env": {
+        "PORT": 18080,
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
