@@ -6,8 +6,8 @@
       "merge_logs": true,
       "max_restarts": 20,
       "exec_mode" : "cluster",
-      "instances": "10",
-      "max_memory_restart": "512",
+      "instances": "5",
+      "max_memory_restart": "1G",
       "env": {
         "PORT": 18080,
         "NODE_ENV": "production"
